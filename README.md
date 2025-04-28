@@ -41,7 +41,7 @@
  *
  */
 
-  * Endpoint Response:
+  * **Endpoint Response:**
  * POST `/users/register`
 
     {
@@ -60,14 +60,14 @@
 
 
 
-* /users/login Endpoint Documentation
+* **/users/login Endpoint Documentation**
 
- * Description:
+ * **Description:**
  * The `/users/login` endpoint lets clients login a user. On a successful login, it returns a JSON object with a JWT token and the user information.
 
 
 
-* Request Payload:
+* **Request Payload:**
 * The endpoint except the a json Body with following Structure.
 
 
@@ -77,7 +77,7 @@
 }
 
 
-* Request Endpoint Response:
+* **Request Endpoint Response:**
 
 {
     "user": (Object){
