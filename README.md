@@ -90,3 +90,49 @@
     }
     "token" : (String) "djfsjg;asdlfjsdj"
 }
+
+
+
+## `/user/profile` Endpoint
+
+### Desciption
+
+Retrives the profile information of the currently authenticated user.
+
+### HTTP Method 
+
+`GET`
+
+### Authentication
+
+
+Requires a valid JWT token in the Authorization header:
+`Authorization: Bearer <token>`
+
+
+### Example Response
+
+- `user` (object):
+    -`fullname` (object).
+        -`lastname` (string): User's first name (minimum 3 characters).
+        -`lastname` (string): User's last name (minimum 3 characters).
+    -`email` (string):User's password (minimum 6 characters).
+    -`password` (string): User's password (minimum 6 characters).
+
+
+
+
+## `/user/logout` Endpoint
+
+### Description 
+
+Logout the current user and blacklist the token provided in cookie or headers
+
+### HTTP Method
+
+`GET`
+
+### Authentication
+
+Require a valid JWT token in the Authorization header:
+
