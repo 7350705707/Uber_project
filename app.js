@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const userRoutes = require("./routes/user.route");
+const captainRoutes = require("./routes/captain.route");
 
 const express = require('express');
 
@@ -28,6 +29,7 @@ app.get('/', (req,res)=>{
 
 
 app.use("/users", userRoutes);
+app.use("/captains", captainRoutes)
 
 
 
