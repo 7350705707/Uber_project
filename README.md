@@ -9,6 +9,7 @@
  * Request Payload:
  * The endpoint expects a JSON body with the following structure:
  *
+ ```json
  * {
  *   "fullname": {
  *     "firstname": "John",   // Minimum 3 characters required
@@ -17,13 +18,15 @@
  *   "email": "john.doe@example.com",  // Must be a valid email
  *   "password": "password123"           // Minimum 6 characters required
  * }
+
+ ```
  *
  * Response:
  * - **400 Bad Request**  
  * If validation fails, the response will contain an `errors` array detailing the issues.
  *
  * **Example:**
-
+```json
  * {
  *   "errors": [
  *     {
@@ -38,24 +41,27 @@
  *     }
  *   ]
  * }
+
+ ```
  *
  */
 
   * **Endpoint Response:**
  * POST `/users/register`
 
+```json
     {
-        user: (Object){
- *   "fullname":(Object) {
- *     "firstname":(String) "John",   // Minimum 3 characters required
- *     "lastname":(String) "Doe"        // Required; minimum 3 characters enforced by the model
- *   },
- *   "email":(String) "john.doe@example.com",  // Must be a valid email
- *   "password":String "password123"           // Minimum 6 characters required
- * },
-    token: (String)
+        user: {
+    "fullname": {
+      "firstname": "John",   // Minimum 3 characters required
+      "lastname": "Doe"        // Required; minimum 3 characters enforced by the model
+    },
+    "email":"john.doe@example.com",  // Must be a valid email
+    "password": "password123"           // Minimum 6 characters required
+  },
+    token: "faslfjdsf"
     }
-    
+```
 
 
 
@@ -78,7 +84,7 @@
 
 
 * **Request Endpoint Response:**
-
+```json
 {
     "user": (Object){
         "fullname":(Object) {
@@ -91,6 +97,7 @@
     "token" : (String) "djfsjg;asdlfjsdj"
 }
 
+```
 
 
 # `/user/profile` Endpoint
