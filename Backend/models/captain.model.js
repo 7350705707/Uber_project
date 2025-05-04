@@ -61,12 +61,10 @@ const captainSchema = new mongoose.Schema({
     },
     location:{
         lat:{
-            type:Number,
-
-
+            type:Number
         },
         long:{
-            type:Number,
+            type:Number
         }
     },
     createdAt:{
