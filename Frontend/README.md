@@ -37,18 +37,20 @@ src/
 │   ├── CaptainContext.jsx  # State for captain data
 │   └── userContext.jsx     # State for user data
 └── pages/               # Application pages
-    ├── Start.jsx        # Landing page
-    ├── User pages       # User-specific pages
+    ├── common/          # Shared components
+    │   └── Start.jsx    # Landing page
+    ├── UserPages/       # User-specific pages
     │   ├── UserLogin.jsx     # User login form
     │   ├── UserSignup.jsx    # User registration form
     │   ├── UserLogout.jsx    # User logout handling
     │   ├── UserProtectedWrapper.jsx  # Route protection
     │   └── Home.jsx          # User dashboard
-    └── Captain pages    # Captain-specific pages
+    └── CaptainPages/    # Captain-specific pages
         ├── CaptainLogin.jsx     # Captain login form
         ├── CaptainSignup.jsx    # Captain registration with vehicle details
         ├── CaptainLogout.jsx    # Captain logout handling
         ├── CaptainProtectedWrapper.jsx  # Route protection
+        └── CaptainHome.jsx      # Captain dashboard
         └── CaptainHome.jsx      # Captain dashboard
 ```
 

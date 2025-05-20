@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { UserDataContext } from "../Context/userContext";
+import { UserDataContext } from "../../Context/userContext";
 import { useContext } from "react";
 
 
