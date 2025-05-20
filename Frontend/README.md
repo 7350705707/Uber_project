@@ -13,6 +13,9 @@ A modern ride-sharing application frontend built with React and Vite. This appli
 - **Form Validation**: Client-side validation for all input forms
 - **Custom Components**: Specialized input fields for license plates and vehicle details
 - **Error Handling**: Comprehensive error handling for API requests
+- **Interactive Ride Booking**: Multi-step ride booking flow with location selection and vehicle options
+- **GSAP Animations**: Smooth transitions and animations for UI elements
+- **Dynamic Panels**: Interactive panels for location search, vehicle selection, and ride confirmation
 
 ## 🚀 Technologies Used
 
@@ -33,6 +36,13 @@ src/
 ├── App.jsx              # Main application component with routes
 ├── main.jsx             # Entry point with context providers
 ├── index.css            # Global styles
+├── components/          # Reusable UI components
+│   ├── ConfirmedRide.jsx    # Ride confirmation display
+│   ├── LocationSearchPanel.jsx  # Location search interface
+│   ├── LookingForDriver.jsx  # Driver search display
+│   ├── Riding.jsx      # Active ride interface
+│   ├── VehiclePanel.jsx   # Vehicle selection interface
+│   └── WaitForDriver.jsx  # Waiting for driver display
 ├── Context/             # React context for state management
 │   ├── CaptainContext.jsx  # State for captain data
 │   └── userContext.jsx     # State for user data
@@ -44,13 +54,12 @@ src/
     │   ├── UserSignup.jsx    # User registration form
     │   ├── UserLogout.jsx    # User logout handling
     │   ├── UserProtectedWrapper.jsx  # Route protection
-    │   └── Home.jsx          # User dashboard
+    │   └── Home.jsx          # User dashboard with ride booking
     └── CaptainPages/    # Captain-specific pages
         ├── CaptainLogin.jsx     # Captain login form
         ├── CaptainSignup.jsx    # Captain registration with vehicle details
         ├── CaptainLogout.jsx    # Captain logout handling
         ├── CaptainProtectedWrapper.jsx  # Route protection
-        └── CaptainHome.jsx      # Captain dashboard
         └── CaptainHome.jsx      # Captain dashboard
 ```
 
